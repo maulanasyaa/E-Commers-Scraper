@@ -6,9 +6,7 @@ from bs4 import BeautifulSoup
 from fetch_page import fetch_page
 
 
-def parse_laptop(url: str, parser="lxml") -> list[dict]:
-    data: list[dict] = []
-
+def get_computer_page(url: str, parser="lxml"):
     # get computer page
     try:
         computer_page_url = fetch_page(url).select_one(
@@ -16,21 +14,29 @@ def parse_laptop(url: str, parser="lxml") -> list[dict]:
         )["href"]
         computer_page = requests.get(urljoin(url, computer_page_url))
         computer_parser = BeautifulSoup(computer_page.text, parser)
+        return computer_parser
     except Exception as e:
         print(f"Error access computer page: {e}")
 
+
+def get_laptop_page(url: str, parser="lxml"):
     # get laptop page
     try:
-        laptop_page_url = computer_parser.select_one(
+        laptop_page_url = get_computer_page(url).select_one(
             "ul#side-menu li.nav-item:nth-of-type(2) ul.nav.nav-second-level li.nav-item a"
         )["href"]
         laptop_page = requests.get(urljoin(url, laptop_page_url))
         laptop_parser = BeautifulSoup(laptop_page.text, parser)
+        return laptop_parser
     except Exception as e:
         print(f"Error access laptop page: {e}")
 
+
+def parse_laptop(url: str, parser="lxml") -> list[dict]:
+    data: list[dict] = []
+
     # get item
-    all_laptop = laptop_parser.select(
+    all_laptop = get_laptop_page(url).select(
         "div.container.test-site div.row div.col-lg-9 div.row div.col-md-4.col-xl-4.col-lg-4"
     )
 
