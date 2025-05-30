@@ -1,0 +1,139 @@
+Name,Type,Price,HDD,Total_Review,Rating
+Asus VivoBook X441NA-GA190,Laptop,295.99,"['128', '256', '512', '1024']",14,3
+Prestigio SmartBook 133S Dark Grey,Laptop,299.0,"['128', '256', '512', '1024']",8,2
+Prestigio SmartBook 133S Gold,Laptop,299.0,"['128', '256', '512', '1024']",12,4
+Aspire E1-510,Laptop,306.99,"['128', '256', '512', '1024']",2,3
+Lenovo V110-15IAP,Laptop,321.94,"['128', '256', '512', '1024']",5,3
+Lenovo V110-15IAP,Laptop,356.49,"['128', '256', '512', '1024']",6,2
+Hewlett Packard 250 G6 Dark Ash Silver,Laptop,364.46,"['128', '256', '512', '1024']",12,1
+Acer Aspire 3 A315-31 Black,Laptop,372.7,"['128', '256', '512', '1024']",2,2
+Acer Aspire A315-31-C33J,Laptop,379.94,"['128', '256', '512', '1024']",0,2
+Acer Aspire ES1-572 Black,Laptop,379.95,"['128', '256', '512', '1024']",9,4
+Acer Aspire 3 A315-31 Black,Laptop,391.48,"['128', '256', '512', '1024']",10,4
+Acer Aspire 3 A315-21,Laptop,393.88,"['128', '256', '512', '1024']",9,3
+Asus VivoBook Max,Laptop,399.0,"['128', '256', '512', '1024']",4,1
+Asus VivoBook E502NA-GO022T Dark Blue,Laptop,399.99,"['128', '256', '512', '1024']",3,4
+Lenovo ThinkPad E31-80,Laptop,404.23,"['128', '256', '512', '1024']",12,1
+Acer Aspire 3 A315-31 Black,Laptop,408.98,"['128', '256', '512', '1024']",10,4
+Lenovo V110-15ISK,Laptop,409.63,"['128', '256', '512', '1024']",9,3
+Acer Aspire ES1-732 Black,Laptop,410.46,"['128', '256', '512', '1024']",14,4
+Asus VivoBook 15 X540NA-GQ026T,Laptop,410.66,"['128', '256', '512', '1024']",4,4
+Packard 255 G2,Laptop,416.99,"['128', '256', '512', '1024']",2,2
+Asus EeeBook R416NA-FA014T,Laptop,433.3,"['128', '256', '512', '1024']",1,1
+Acer Aspire 3 A315-51,Laptop,436.29,"['128', '256', '512', '1024']",1,1
+Acer Aspire ES1-572 Black,Laptop,436.29,"['128', '256', '512', '1024']",2,1
+Acer Extensa 15 (2540) Black,Laptop,439.73,"['128', '256', '512', '1024']",6,4
+Acer Aspire ES1-572 Black,Laptop,454.62,"['128', '256', '512', '1024']",9,1
+Lenovo V110-15ISK,Laptop,454.73,"['128', '256', '512', '1024']",2,2
+Acer Aspire A315-51-33TG,Laptop,457.38,"['128', '256', '512', '1024']",9,3
+Lenovo V110-15IKB,Laptop,465.95,"['128', '256', '512', '1024']",7,1
+Asus VivoBook 15 X540UA-DM260 Chocolate Black,Laptop,468.56,"['128', '256', '512', '1024']",1,3
+Acer Aspire ES1-572 Black,Laptop,469.1,"['128', '256', '512', '1024']",5,3
+Lenovo V510 Black,Laptop,484.23,"['128', '256', '512', '1024']",8,3
+Acer Aspire ES1-572 Black,Laptop,485.9,"['128', '256', '512', '1024']",6,3
+Lenovo V510 Black,Laptop,487.8,"['128', '256', '512', '1024']",9,2
+Acer Swift 1 SF113-31 Silver,Laptop,488.64,"['128', '256', '512', '1024']",4,3
+Dell Vostro 15,Laptop,488.78,"['128', '256', '512', '1024']",14,4
+Acer Aspire 3 A315-51 Black,Laptop,494.71,"['128', '256', '512', '1024']",2,4
+Dell Vostro 15 (3568) Red,Laptop,497.17,"['128', '256', '512', '1024']",9,1
+Lenovo V510 Black,Laptop,498.23,"['128', '256', '512', '1024']",5,3
+HP 250 G3,Laptop,520.99,"['128', '256', '512', '1024']",13,2
+Acer Spin 5,Laptop,564.98,"['128', '256', '512', '1024']",0,2
+HP 350 G1,Laptop,577.99,"['128', '256', '512', '1024']",10,2
+Aspire E1-572G,Laptop,581.99,"['128', '256', '512', '1024']",2,1
+Pavilion,Laptop,609.99,"['128', '256', '512', '1024']",4,1
+Acer Aspire A515-51-5654,Laptop,679.0,"['128', '256', '512', '1024']",9,2
+Dell Inspiron 15,Laptop,679.0,"['128', '256', '512', '1024']",7,2
+Asus VivoBook S14,Laptop,729.0,"['128', '256', '512', '1024']",2,1
+ProBook,Laptop,739.99,"['128', '256', '512', '1024']",8,4
+Inspiron 15,Laptop,745.99,"['128', '256', '512', '1024']",12,3
+Asus ROG STRIX GL553VD-DM256,Laptop,799.0,"['128', '256', '512', '1024']",7,2
+Acer Nitro 5 AN515-51,Laptop,809.0,"['128', '256', '512', '1024']",0,1
+Asus ROG STRIX GL553VD-DM256,Laptop,899.0,"['128', '256', '512', '1024']",7,1
+Lenovo ThinkPad L570,Laptop,999.0,"['128', '256', '512', '1024']",11,3
+ThinkPad Yoga,Laptop,1033.99,"['128', '256', '512', '1024']",13,2
+Lenovo ThinkPad L460,Laptop,1096.02,"['128', '256', '512', '1024']",14,4
+Dell Inspiron 15 (7567) Black,Laptop,1098.42,"['128', '256', '512', '1024']",7,1
+MSI GL72M 7RDX,Laptop,1099.0,"['128', '256', '512', '1024']",1,4
+MSI GL72M 7RDX,Laptop,1099.0,"['128', '256', '512', '1024']",9,1
+Asus ROG Strix GL553VD-DM535T,Laptop,1101.83,"['128', '256', '512', '1024']",4,2
+Dell Latitude 5280,Laptop,1102.66,"['128', '256', '512', '1024']",8,1
+Dell Latitude 5480,Laptop,1110.14,"['128', '256', '512', '1024']",4,3
+Lenovo Legion Y520-15IKBM,Laptop,1112.91,"['128', '256', '512', '1024']",1,4
+Toshiba Portege Z30-C-16J Grey,Laptop,1114.55,"['128', '256', '512', '1024']",0,1
+Acer Predator Helios 300 (PH317-51),Laptop,1123.87,"['128', '256', '512', '1024']",1,2
+Acer Aspire 7 A715-71G,Laptop,1123.87,"['128', '256', '512', '1024']",4,2
+Dell Inspiron 17 2in1 (7779) Silver,Laptop,1124.2,"['128', '256', '512', '1024']",10,3
+Dell Latitude 5480,Laptop,1133.82,"['128', '256', '512', '1024']",14,4
+Lenovo Legion Y520,Laptop,1133.91,"['128', '256', '512', '1024']",13,1
+Asus AsusPro Advanced BU401LA-FA271G Dark Grey,Laptop,1139.54,"['128', '256', '512', '1024']",7,3
+Acer Nitro 5 AN515-51,Laptop,1140.62,"['128', '256', '512', '1024']",14,3
+Dell Latitude 5480,Laptop,1143.4,"['128', '256', '512', '1024']",5,4
+Dell Inspiron 15 (7567) Black,Laptop,1144.2,"['128', '256', '512', '1024']",2,1
+Dell Latitude 5580,Laptop,1144.4,"['128', '256', '512', '1024']",10,3
+Lenovo Legion Y520-15IKBM,Laptop,1149.0,"['128', '256', '512', '1024']",11,3
+MSI GP62M 7RDX Leopard,Laptop,1149.0,"['128', '256', '512', '1024']",11,1
+Lenovo Yoga 720 Grey,Laptop,1149.73,"['128', '256', '512', '1024']",12,2
+Toshiba Portege Z30-C-16L Grey,Laptop,1154.04,"['128', '256', '512', '1024']",7,1
+Acer TravelMate P645-S-511A Black,Laptop,1170.1,"['128', '256', '512', '1024']",0,1
+Dell Latitude 5580,Laptop,1178.19,"['128', '256', '512', '1024']",6,3
+ThinkPad T540p,Laptop,1178.99,"['128', '256', '512', '1024']",2,1
+MSI GS63 7RD Stealth,Laptop,1179.0,"['128', '256', '512', '1024']",2,1
+Dell Latitude 5480,Laptop,1187.88,"['128', '256', '512', '1024']",5,3
+Acer Predator Helios 300 (PH317-51),Laptop,1187.98,"['128', '256', '512', '1024']",14,3
+MSI GL62M 7REX,Laptop,1199.0,"['128', '256', '512', '1024']",7,1
+MSI GL62M 7REX2,Laptop,1199.0,"['128', '256', '512', '1024']",12,2
+Lenovo Yoga 910 Grey,Laptop,1199.73,"['128', '256', '512', '1024']",7,3
+Toshiba Portege X30-D-10J Black/Blue,Laptop,1203.41,"['128', '256', '512', '1024']",13,4
+Lenovo IdeaPad Miix 510 Platinum Silver,Laptop,1212.16,"['128', '256', '512', '1024']",0,4
+Acer Predator Helios 300 (PH317-51),Laptop,1221.58,"['128', '256', '512', '1024']",9,1
+ThinkPad Yoga,Laptop,1223.99,"['128', '256', '512', '1024']",2,3
+Asus VivoBook Pro 15 N580VN-FI006T Gold Metal,Laptop,1235.49,"['128', '256', '512', '1024']",10,2
+Dell Latitude 5480,Laptop,1238.37,"['128', '256', '512', '1024']",0,2
+Asus ZenBook UX530UX-FY040T Blue,Laptop,1239.2,"['128', '256', '512', '1024']",14,1
+ThinkPad X230,Laptop,1244.99,"['128', '256', '512', '1024']",10,3
+Asus ROG Strix GL753VE-GC096T,Laptop,1259.0,"['128', '256', '512', '1024']",7,4
+"Apple MacBook Air 13""",Laptop,1260.13,"['128', '256', '512', '1024']",8,4
+Dell Latitude 5480,Laptop,1271.06,"['128', '256', '512', '1024']",13,1
+Hewlett Packard Spectre 13-v106na Dark Ash Silver,Laptop,1273.11,"['128', '256', '512', '1024']",8,3
+Dell XPS 13,Laptop,1281.99,"['128', '256', '512', '1024']",4,3
+Toshiba Portege Z30-C-16K Grey,Laptop,1294.74,"['128', '256', '512', '1024']",6,1
+MSI GL62VR 7RFX,Laptop,1299.0,"['128', '256', '512', '1024']",1,3
+Dell Latitude 5480,Laptop,1310.39,"['128', '256', '512', '1024']",8,3
+ThinkPad X240,Laptop,1311.99,"['128', '256', '512', '1024']",12,3
+Hewlett Packard ProBook 640 G3,Laptop,1326.83,"['128', '256', '512', '1024']",2,1
+"Apple MacBook Pro 13"" Space Gray",Laptop,1333.0,"['128', '256', '512', '1024']",0,1
+Dell Latitude 5580,Laptop,1337.28,"['128', '256', '512', '1024']",6,1
+Dell Latitude 5480,Laptop,1338.37,"['128', '256', '512', '1024']",11,2
+Dell Latitude 5580,Laptop,1341.22,"['128', '256', '512', '1024']",3,3
+"Apple MacBook Air 13""",Laptop,1347.78,"['128', '256', '512', '1024']",11,2
+Lenovo ThinkPad T470,Laptop,1349.23,"['128', '256', '512', '1024']",5,1
+Lenovo ThinkPad Yoga 370 Black,Laptop,1362.24,"['128', '256', '512', '1024']",12,2
+Toshiba Portege X20W-D-10V Black/Blue,Laptop,1366.32,"['128', '256', '512', '1024']",11,1
+Asus ASUSPRO B9440UA-GV0279R Gray,Laptop,1381.13,"['128', '256', '512', '1024']",4,1
+Lenovo Legion Y720,Laptop,1399.0,"['128', '256', '512', '1024']",8,3
+Asus ROG Strix GL702VM-GC146T,Laptop,1399.0,"['128', '256', '512', '1024']",10,3
+Asus ROG Strix GL702ZC-GC154T,Laptop,1769.0,"['128', '256', '512', '1024']",7,4
+Asus ROG Strix GL702ZC-GC209T,Laptop,1769.0,"['128', '256', '512', '1024']",8,1
+Asus ROG Strix SCAR Edition GL503VM-ED115T,Laptop,1799.0,"['128', '256', '512', '1024']",8,3
+Lenovo IdeaTab,Tablet,69.99,"['128', '256', '512', '1024']",7,3
+IdeaTab A3500L,Tablet,88.99,"['128', '256', '512', '1024']",7,4
+Acer Iconia,Tablet,96.99,"['128', '256', '512', '1024']",7,1
+Galaxy Tab 3,Tablet,97.99,"['128', '256', '512', '1024']",2,2
+Iconia B1-730HD,Tablet,99.99,"['128', '256', '512', '1024']",1,3
+Memo Pad HD 7,Tablet,101.99,"['128', '256', '512', '1024']",10,2
+Asus MeMO Pad,Tablet,102.99,"['128', '256', '512', '1024']",14,4
+Amazon Kindle,Tablet,103.99,"['128', '256', '512', '1024']",3,4
+Galaxy Tab 3,Tablet,107.99,"['128', '256', '512', '1024']",14,2
+IdeaTab A8-50,Tablet,121.99,"['128', '256', '512', '1024']",13,2
+MeMO Pad 7,Tablet,130.99,"['128', '256', '512', '1024']",11,1
+IdeaTab A3500-H,Tablet,148.99,"['128', '256', '512', '1024']",9,2
+IdeaTab S5000,Tablet,172.99,"['128', '256', '512', '1024']",8,3
+Galaxy Tab 4,Tablet,233.99,"['128', '256', '512', '1024']",1,4
+Galaxy Tab,Tablet,251.99,"['128', '256', '512', '1024']",14,3
+MeMo PAD FHD 10,Tablet,320.99,"['128', '256', '512', '1024']",7,2
+Galaxy Note,Tablet,399.99,"['128', '256', '512', '1024']",12,4
+Galaxy Note,Tablet,489.99,"['128', '256', '512', '1024']",9,3
+iPad Mini Retina,Tablet,537.99,"['128', '256', '512', '1024']",8,2
+Galaxy Note 10.1,Tablet,587.99,"['128', '256', '512', '1024']",6,2
+Apple iPad Air,Tablet,603.99,"['128', '256', '512', '1024']",7,3

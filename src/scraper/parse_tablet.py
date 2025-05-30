@@ -6,32 +6,29 @@ from bs4 import BeautifulSoup
 from .fetch_page import get_computer_page
 
 
-def get_laptop_page(url: str, parser="lxml"):
-    # get laptop page
+def get_tablet_page(url: str, parser="lxml"):
     try:
-        laptop_page_url = get_computer_page(url).select_one(
-            "ul#side-menu li.nav-item:nth-of-type(2) ul.nav.nav-second-level li.nav-item a"
+        tablet_page_url = get_computer_page(url).select_one(
+            "ul#side-menu li.nav-item:nth-of-type(2) ul.nav.nav-second-level li.nav-item:nth-of-type(2) a"
         )["href"]
-        laptop_page = requests.get(urljoin(url, laptop_page_url))
-        laptop_parser = BeautifulSoup(laptop_page.text, parser)
-        return laptop_parser
+        tablet_page = requests.get(urljoin(url, tablet_page_url))
+        tablet_page_parser = BeautifulSoup(tablet_page.text, parser)
+        return tablet_page_parser
     except Exception as e:
-        print(f"Error access laptop page: {e}")
+        print(f"Error get tablet page: {e}")
 
 
-def parse_laptop(url: str, parser="lxml") -> list[dict]:
+def parse_tablet(url, parser="lxml") -> list[dict]:
     data: list[dict] = []
 
     # get item
-    all_laptop = get_laptop_page(url).select(
+    all_tablet = get_tablet_page(url).select(
         "div.container.test-site div.row div.col-lg-9 div.row div.col-md-4.col-xl-4.col-lg-4"
     )
 
-    for item in all_laptop:
+    for item in all_tablet:
         try:
-            item_url = item.select_one(
-                "div.card.thumbnail div.product-wrapper.card-body div.caption h4 a"
-            )["href"]
+            item_url = item.select_one('a[itemprop= "name"]')["href"]
             item_page = requests.get(urljoin(url, item_url))
             item_parser = BeautifulSoup(item_page.text, parser)
         except Exception as e:
@@ -40,13 +37,13 @@ def parse_laptop(url: str, parser="lxml") -> list[dict]:
         # extract data
         try:
             # name
-            item_name = item_parser.select_one('h4[itemprop ="name"]').text.strip()
+            item_name = item_parser.select_one('h4[itemprop="name"]').text.strip()
 
             # price
             item_price = (
                 item_parser.select_one('span[itemprop="price"]')
-                .text.strip()
-                .replace("$", "")
+                .text.replace("$", "")
+                .strip()
             )
 
             # memory
@@ -68,7 +65,7 @@ def parse_laptop(url: str, parser="lxml") -> list[dict]:
                 data.append(
                     {
                         "Name": item_name,
-                        "Type": "Laptop",
+                        "Type": "Tablet",
                         "Price": float(item_price),
                         "HDD": item_memory,
                         "Total_Review": int(item_review),
@@ -78,10 +75,12 @@ def parse_laptop(url: str, parser="lxml") -> list[dict]:
 
             else:
                 print("Data N/A.")
-
         except Exception as e:
             print(f"Error extract data: {e}")
             return None
 
-    print("Getting laptop data success!")
+    print("Getting tablet data success!")
     return data
+
+
+parse_tablet("https://webscraper.io/test-sites/e-commerce/allinone")
