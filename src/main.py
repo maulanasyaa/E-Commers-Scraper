@@ -1,3 +1,4 @@
+import logging
 import os
 import time
 
@@ -7,24 +8,32 @@ from scraper.create_file import create_file
 from scraper.parse_laptop import parse_laptop
 from scraper.parse_tablet import parse_tablet
 
+# logging
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 # get main url
 load_dotenv()
 BASE_URL = os.getenv("BASE_URL")
 
 
-def main(url):
+def main(url: str):
     try:
-        print("Getting data..")
-        parse_laptop(url)
+        logging.info("Scraping progress started..")
+        laptop_data = parse_laptop(url)
         time.sleep(3)
-        parse_tablet(url)
+        tablet_data = parse_tablet(url)
         time.sleep(3)
 
-        print("Creating file..")
-        create_file(url)
+        logging.info("Data collection complete. Creating files...")
+        create_file(laptop_data, tablet_data)
     except Exception as e:
-        print(f"Error in main: {e}")
+        logging.error(f"Error in main process: {e}", exc_info=True)
 
 
 if __name__ == "__main__":
-    main(BASE_URL)
+    if BASE_URL:
+        main(BASE_URL)
+    else:
+        logging.error("BASE_URL not found. Please set it in your .env file.")

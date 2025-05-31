@@ -1,3 +1,4 @@
+import logging
 from urllib.parse import urljoin
 
 import requests
@@ -5,8 +6,11 @@ from bs4 import BeautifulSoup
 
 from .fetch_page import get_computer_page
 
+# logger
+logger = logging.getLogger(__name__)
 
-def get_tablet_page(url: str, parser="lxml"):
+
+def get_tablet_page(url: str, parser="lxml") -> BeautifulSoup:
     try:
         tablet_page_url = get_computer_page(url).select_one(
             "ul#side-menu li.nav-item:nth-of-type(2) ul.nav.nav-second-level li.nav-item:nth-of-type(2) a"
@@ -15,10 +19,10 @@ def get_tablet_page(url: str, parser="lxml"):
         tablet_page_parser = BeautifulSoup(tablet_page.text, parser)
         return tablet_page_parser
     except Exception as e:
-        print(f"Error get tablet page: {e}")
+        logger.error(f"Error get tablet page: {e}")
 
 
-def parse_tablet(url, parser="lxml") -> list[dict]:
+def parse_tablet(url: str, parser="lxml") -> list[dict]:
     data: list[dict] = []
 
     # get item
@@ -47,12 +51,13 @@ def parse_tablet(url, parser="lxml") -> list[dict]:
             )
 
             # memory
-            item_memory = []
+            list_memory = []
             memory_list = item_parser.select_one("div.swatches")
             memory_option = memory_list.find_all("button")
             for index in memory_option:
                 index = index.text
-                item_memory.append(index)
+                list_memory.append(index)
+            item_memory = ",".join(list_memory)
 
             # review
             item_review = item_parser.select_one('span[itemprop="reviewCount"]').text
@@ -74,13 +79,10 @@ def parse_tablet(url, parser="lxml") -> list[dict]:
                 )
 
             else:
-                print("Data N/A.")
+                logger.info("Data N/A.")
         except Exception as e:
-            print(f"Error extract data: {e}")
+            logger.error(f"Error extract data: {e}")
             return None
 
-    print("Getting tablet data success!")
+    logger.info("Getting tablet data success!")
     return data
-
-
-parse_tablet("https://webscraper.io/test-sites/e-commerce/allinone")

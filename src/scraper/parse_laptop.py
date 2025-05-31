@@ -1,3 +1,4 @@
+import logging
 from urllib.parse import urljoin
 
 import requests
@@ -5,8 +6,11 @@ from bs4 import BeautifulSoup
 
 from .fetch_page import get_computer_page
 
+# logger
+logger = logging.getLogger(__name__)
 
-def get_laptop_page(url: str, parser="lxml"):
+
+def get_laptop_page(url: str, parser="lxml") -> BeautifulSoup:
     # get laptop page
     try:
         laptop_page_url = get_computer_page(url).select_one(
@@ -16,7 +20,7 @@ def get_laptop_page(url: str, parser="lxml"):
         laptop_parser = BeautifulSoup(laptop_page.text, parser)
         return laptop_parser
     except Exception as e:
-        print(f"Error access laptop page: {e}")
+        logger.error(f"Error access laptop page: {e}")
 
 
 def parse_laptop(url: str, parser="lxml") -> list[dict]:
@@ -35,7 +39,7 @@ def parse_laptop(url: str, parser="lxml") -> list[dict]:
             item_page = requests.get(urljoin(url, item_url))
             item_parser = BeautifulSoup(item_page.text, parser)
         except Exception as e:
-            print(f"Error access item page: {e}")
+            logger.error(f"Error access item page: {e}")
 
         # extract data
         try:
@@ -50,12 +54,13 @@ def parse_laptop(url: str, parser="lxml") -> list[dict]:
             )
 
             # memory
-            item_memory = []
+            list_memory = []
             memory_list = item_parser.select_one("div.swatches")
             memory_option = memory_list.find_all("button")
             for index in memory_option:
                 index = index.text
-                item_memory.append(index)
+                list_memory.append(index)
+            item_memory = ",".join(list_memory)
 
             # review
             item_review = item_parser.select_one('span[itemprop="reviewCount"]').text
@@ -77,11 +82,11 @@ def parse_laptop(url: str, parser="lxml") -> list[dict]:
                 )
 
             else:
-                print("Data N/A.")
+                logger.info("Data N/A.")
 
         except Exception as e:
-            print(f"Error extract data: {e}")
+            logger.error(f"Error extract data: {e}")
             return None
 
-    print("Getting laptop data success!")
+    logger.info("Getting laptop data success!")
     return data
