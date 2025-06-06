@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from scraper.create_file import create_file
 from scraper.parse_laptop import parse_laptop
 from scraper.parse_tablet import parse_tablet
+from scraper.parse_touch import parse_touch
 
 # logging
 logging.basicConfig(
@@ -25,9 +26,10 @@ def main(url: str):
         time.sleep(3)
         tablet_data = parse_tablet(url)
         time.sleep(3)
+        touch_data = parse_touch(url)
 
         logging.info("Data collection complete. Creating files...")
-        create_file(laptop_data, tablet_data)
+        create_file(laptop_data, tablet_data, touch_data)
     except Exception as e:
         logging.error(f"Error in main process: {e}", exc_info=True)
 

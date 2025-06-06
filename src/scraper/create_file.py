@@ -7,7 +7,7 @@ import pandas as pd
 logger = logging.getLogger(__name__)
 
 
-def create_file(laptop_data, tablet_data):
+def create_file(laptop_data, tablet_data, touch_data):
     # prepare path
     current_path = os.path.dirname(__file__)
     data_dir = os.path.join(current_path, "..", "..", "Data")
@@ -18,8 +18,9 @@ def create_file(laptop_data, tablet_data):
     try:
         df_laptop = pd.DataFrame(laptop_data)
         df_tablet = pd.DataFrame(tablet_data)
+        df_touch = pd.DataFrame(touch_data)
 
-        df_combine = pd.concat([df_laptop, df_tablet])
+        df_combine = pd.concat([df_laptop, df_tablet, df_touch])
         df_combine.to_csv(csv_path, index=False)
         df_combine.to_json(json_path, orient="records", indent=4)
 

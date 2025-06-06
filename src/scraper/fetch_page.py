@@ -30,3 +30,16 @@ def get_computer_page(url: str, parser="lxml") -> BeautifulSoup:
         return computer_parser
     except Exception as e:
         logger.error(f"Error access computer page: {e}")
+
+
+def get_phone_page(url: str, parser="lxml") -> BeautifulSoup:
+    # get phone page
+    try:
+        phone_page_url = fetch_page(url).select_one(
+            "ul#side-menu li.nav-item:nth-of-type(3) a"
+        )["href"]
+        phone_page = requests.get(urljoin(url, phone_page_url))
+        phone_page_parser = BeautifulSoup(phone_page.text, parser)
+        return phone_page_parser
+    except Exception as e:
+        logger.error(f"Error access phone page: {e}")
