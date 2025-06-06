@@ -1102,5 +1102,77 @@
         "HDD":"128,256,512,1024",
         "Total_Review":7,
         "Rating":3
+    },
+    {
+        "Name":"Nokia 123",
+        "Type":"Phone",
+        "Price":24.99,
+        "HDD":"-",
+        "Total_Review":"11",
+        "Rating":3
+    },
+    {
+        "Name":"LG Optimus",
+        "Type":"Phone",
+        "Price":57.99,
+        "HDD":"-",
+        "Total_Review":"11",
+        "Rating":3
+    },
+    {
+        "Name":"Samsung Galaxy",
+        "Type":"Phone",
+        "Price":93.99,
+        "HDD":"-",
+        "Total_Review":"3",
+        "Rating":3
+    },
+    {
+        "Name":"Nokia X",
+        "Type":"Phone",
+        "Price":109.99,
+        "HDD":"-",
+        "Total_Review":"4",
+        "Rating":4
+    },
+    {
+        "Name":"Sony Xperia",
+        "Type":"Phone",
+        "Price":118.99,
+        "HDD":"-",
+        "Total_Review":"6",
+        "Rating":1
+    },
+    {
+        "Name":"Ubuntu Edge",
+        "Type":"Phone",
+        "Price":499.99,
+        "HDD":"-",
+        "Total_Review":"2",
+        "Rating":1
+    },
+    {
+        "Name":"Iphone",
+        "Type":"Phone",
+        "Price":899.99,
+        "HDD":"-",
+        "Total_Review":"10",
+        "Rating":1
+    },
+    {
+        "Name":"Iphone",
+        "Type":"Phone",
+        "Price":899.99,
+        "HDD":"-",
+        "Total_Review":"8",
+        "Rating":2
+    },
+    {
+        "Name":"Iphone",
+        "Type":"Phone",
+        "Price":899.99,
+        "HDD":"-",
+        "Total_Review":"1",
+        "Rating":1
     }
 ]
